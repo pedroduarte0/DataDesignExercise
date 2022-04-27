@@ -22,7 +22,7 @@ Fork this repository and add your tables here:
 
 ### Authors
 
-| AuthorID | FullName      | Email                       | Bio            |
+| Id       | FullName      | Email                       | Bio            |
 |----------|---------------|-----------------------------|----------------|
 | 1        | Eric Fleming  | ericfleming@nimblepros.com  | Long Text Here |
 | 2        | Kyle McMaster | kylemcmaster@nimblepros.com | Long Text Here |
@@ -30,55 +30,55 @@ Fork this repository and add your tables here:
 
 ### BlogPosts
 
-| Slug                          | Title                                | Body           | AuthorID | Views |
-|-------------------------------|--------------------------------------|----------------|----------|-------|
-| serilog-structured-logging    | Structured Logging with Serilog      | Long Text Here | 1        | 123   |
-| persisting-smart-enum         | Persisting a Smart Enum with EF Core | Long Text Here | 2        | 234   |
-| localization-aspnet-core-apis | Localization in ASP.NET Core APIs    | Long Text Here | 3        | 345   |
+| Id | Slug                          | Title                                | Body           | Authors.Id | Views |
+|----|-------------------------------|--------------------------------------|----------------|------------|-------|
+| 1  | serilog-structured-logging    | Structured Logging with Serilog      | Long Text Here | 1          | 123   |
+| 2  | persisting-smart-enum         | Persisting a Smart Enum with EF Core | Long Text Here | 2          | 234   |
+| 3  | localization-aspnet-core-apis | Localization in ASP.NET Core APIs    | Long Text Here | 3          | 345   |
 
 ### Categories
 
-| CategoryID | Category             |
-|------------|----------------------|
-| 1          | Software Development |
-| 2          | Cloud Computing      |
-| 3          | Web APIs             |
+| Id | Category             |
+|----|----------------------|
+| 1  | Software Development |
+| 2  | Cloud Computing      |
+| 3  | Web APIs             |
 
 ### Tags
 
-| TagID | Tag          |
-|-------|--------------|
-| 1     | logging      |
-| 2     | serilog      |
-| 3     | appinsights  |
-| 4     | smartenum    |
-| 5     | efcore       |
-| 6     | localization |
-| 7     | aspnetcore   |
-| 8     | web-api      |
+| Id | Tag          |
+|----|--------------|
+| 1  | logging      |
+| 2  | serilog      |
+| 3  | appinsights  |
+| 4  | smartenum    |
+| 5  | efcore       |
+| 6  | localization |
+| 7  | aspnetcore   |
+| 8  | web-api      |
 
-### SlugCategories
+### BlogPostsCategories
 
-| Slug                          | CategoryID |
-|-------------------------------|------------|
-| serilog-structured-logging    | 1          |
-| serilog-structured-logging    | 2          |
-| persisting-smart-enum         | 1          |
-| localization-aspnet-core-apis | 1          |
-| localization-aspnet-core-apis | 3          |
+| Id | BlogPosts.Id | Categories.Id |
+|----|--------------|---------------|
+| 1  | 1            | 1             |
+| 2  | 1            | 2             |
+| 3  | 2            | 1             |
+| 4  | 3            | 1             |
+| 5  | 3            | 3             |
 
 ### SlugTags
 
-| Slug                          | TagID |
-|-------------------------------|-------|
-| serilog-structured-logging    | 1     |
-| serilog-structured-logging    | 2     |
-| serilog-structured-logging    | 3     |
-| persisting-smart-enum         | 4     |
-| persisting-smart-enum         | 5     |
-| localization-aspnet-core-apis | 6     |
-| localization-aspnet-core-apis | 7     |
-| localization-aspnet-core-apis | 8     |
+| Slug                          | Tags.Id |
+|-------------------------------|---------|
+| serilog-structured-logging    | 1       |
+| serilog-structured-logging    | 2       |
+| serilog-structured-logging    | 3       |
+| persisting-smart-enum         | 4       |
+| persisting-smart-enum         | 5       |
+| localization-aspnet-core-apis | 6       |
+| localization-aspnet-core-apis | 7       |
+| localization-aspnet-core-apis | 8       |
 
 ## Extra Credit
 
