@@ -87,3 +87,37 @@ Once you've completed the initial exercise, modify your design to support these 
 1. Blog posts can have one or many authors.
 2. Users would like to see a report showing views per blog post per day.
 3. Blog posts can have Comments. Each Comment should include a Title, Commenter Name, and Body.
+
+### BlogPosts
+
+| Id | Slug                          | Title                                | Body           |
+|----|-------------------------------|--------------------------------------|----------------|
+| 1  | serilog-structured-logging    | Structured Logging with Serilog      | Long Text Here |
+| 2  | persisting-smart-enum         | Persisting a Smart Enum with EF Core | Long Text Here |
+| 3  | localization-aspnet-core-apis | Localization in ASP.NET Core APIs    | Long Text Here |
+
+### BlogPostsAuthors
+
+| BlogPosts.Id | Authors.Id |
+|--------------|------------|
+| 1            | 1          |
+| 2            | 2          |
+| 3            | 3          |
+
+### Statistics
+
+| Id | BlogPosts.Id | Date       | Views |
+|----|--------------|------------|-------|
+| 1  | 1            | 04-29-2022 | 89    |
+| 2  | 1            | 04-30-2022 | 123   |
+| 3  | 2            | 04-29-2022 | 204   |
+| 4  | 2            | 04-30-2022 | 234   |
+| 5  | 3            | 04-29-2022 | 320   |
+| 6  | 3            | 04-30-2022 | 345   |
+
+### Comments
+
+| Id | BlogPosts.Id | Title                         | CommenterName | Body                                    |
+|----|--------------|-------------------------------|---------------|-----------------------------------------|
+| 1  | 1            | Inspiring article!            | Elaine Ng     | This one made my day!                   |
+| 2  | 3            | That's what I was looking for | Jason Stone   | Glad I read it! Clear and to the point. |
