@@ -117,7 +117,7 @@ Once you've completed the initial exercise, modify your design to support these 
 
 ### Comments
 
-| Id | BlogPosts.Id | Title                         | CommenterName | Body                                    |
-|----|--------------|-------------------------------|---------------|-----------------------------------------|
-| 1  | 1            | Inspiring article!            | Elaine Ng     | This one made my day!                   |
-| 2  | 3            | That's what I was looking for | Jason Stone   | Glad I read it! Clear and to the point. |
+| Id | BlogPosts.Id | Title                         | Date                | CommenterName | Body                                    |
+|----|--------------|-------------------------------|---------------------|---------------|-----------------------------------------|
+| 1  | 1            | Inspiring article!            | 2022-05-07 13:23:44 | Elaine Ng     | This one made my day!                   |
+| 2  | 3            | That's what I was looking for | 2022-05-02 15:24:54 | Jason Stone   | Glad I read it! Clear and to the point. |
