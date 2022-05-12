@@ -20,6 +20,66 @@ Fork this repository and add your tables here:
 
 (your tables go here - you can use TableGenerator to create them. Include the data from the sample above in your tables)
 
+### Authors
+
+| Id       | FullName      | Email                       | Bio            |
+|----------|---------------|-----------------------------|----------------|
+| 1        | Eric Fleming  | ericfleming@nimblepros.com  | Long Text Here |
+| 2        | Kyle McMaster | kylemcmaster@nimblepros.com | Long Text Here |
+| 3        | Steve Smith   | steve@nimblepros.com        | Long Text Here |
+
+### BlogPosts
+
+| Id | Slug                          | Title                                | Body           | Authors.Id | Views |
+|----|-------------------------------|--------------------------------------|----------------|------------|-------|
+| 1  | serilog-structured-logging    | Structured Logging with Serilog      | Long Text Here | 1          | 123   |
+| 2  | persisting-smart-enum         | Persisting a Smart Enum with EF Core | Long Text Here | 2          | 234   |
+| 3  | localization-aspnet-core-apis | Localization in ASP.NET Core APIs    | Long Text Here | 3          | 345   |
+
+### Categories
+
+| Id | Category             |
+|----|----------------------|
+| 1  | Software Development |
+| 2  | Cloud Computing      |
+| 3  | Web APIs             |
+
+### Tags
+
+| Id | Tag          |
+|----|--------------|
+| 1  | logging      |
+| 2  | serilog      |
+| 3  | appinsights  |
+| 4  | smartenum    |
+| 5  | efcore       |
+| 6  | localization |
+| 7  | aspnetcore   |
+| 8  | web-api      |
+
+### BlogPostsCategories
+
+| Id | BlogPosts.Id | Categories.Id |
+|----|--------------|---------------|
+| 1  | 1            | 1             |
+| 2  | 1            | 2             |
+| 3  | 2            | 1             |
+| 4  | 3            | 1             |
+| 5  | 3            | 3             |
+
+### SlugTags
+
+| Slug                          | Tags.Id |
+|-------------------------------|---------|
+| serilog-structured-logging    | 1       |
+| serilog-structured-logging    | 2       |
+| serilog-structured-logging    | 3       |
+| persisting-smart-enum         | 4       |
+| persisting-smart-enum         | 5       |
+| localization-aspnet-core-apis | 6       |
+| localization-aspnet-core-apis | 7       |
+| localization-aspnet-core-apis | 8       |
+
 ## Extra Credit
 
 Once you've completed the initial exercise, modify your design to support these additional features:
@@ -27,3 +87,37 @@ Once you've completed the initial exercise, modify your design to support these 
 1. Blog posts can have one or many authors.
 2. Users would like to see a report showing views per blog post per day.
 3. Blog posts can have Comments. Each Comment should include a Title, Commenter Name, and Body.
+
+### BlogPosts
+
+| Id | Slug                          | Title                                | Body           |
+|----|-------------------------------|--------------------------------------|----------------|
+| 1  | serilog-structured-logging    | Structured Logging with Serilog      | Long Text Here |
+| 2  | persisting-smart-enum         | Persisting a Smart Enum with EF Core | Long Text Here |
+| 3  | localization-aspnet-core-apis | Localization in ASP.NET Core APIs    | Long Text Here |
+
+### BlogPostsAuthors
+
+| BlogPosts.Id | Authors.Id |
+|--------------|------------|
+| 1            | 1          |
+| 2            | 2          |
+| 3            | 3          |
+
+### Statistics
+
+| Id | BlogPosts.Id | Date       | Views |
+|----|--------------|------------|-------|
+| 1  | 1            | 2022-04-29 | 89    |
+| 2  | 1            | 2022-04-30 | 123   |
+| 3  | 2            | 2022-04-29 | 204   |
+| 4  | 2            | 2022-04-30 | 234   |
+| 5  | 3            | 2022-04-29 | 320   |
+| 6  | 3            | 2022-04-30 | 345   |
+
+### Comments
+
+| Id | BlogPosts.Id | Title                         | Date                | CommenterName | Body                                    |
+|----|--------------|-------------------------------|---------------------|---------------|-----------------------------------------|
+| 1  | 1            | Inspiring article!            | 2022-05-07 13:23:44 | Elaine Ng     | This one made my day!                   |
+| 2  | 3            | That's what I was looking for | 2022-05-02 15:24:54 | Jason Stone   | Glad I read it! Clear and to the point. |
