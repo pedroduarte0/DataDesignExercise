@@ -59,13 +59,13 @@ Fork this repository and add your tables here:
 
 ### BlogPostsCategories
 
-| Id | BlogPosts.Id | Categories.Id |
-|----|--------------|---------------|
-| 1  | 1            | 1             |
-| 2  | 1            | 2             |
-| 3  | 2            | 1             |
-| 4  | 3            | 1             |
-| 5  | 3            | 3             |
+| BlogPosts.Id | Categories.Id |
+|--------------|---------------|
+| 1            | 1             |
+| 1            | 2             |
+| 2            | 1             |
+| 3            | 1             |
+| 3            | 3             |
 
 ### SlugTags
 
