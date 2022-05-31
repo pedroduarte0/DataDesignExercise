@@ -129,7 +129,7 @@ Write the SQL queries required **using your new schema** to support these featur
 | 2            | 2          |
 | 3            | 3          |
 
-### Statistics
+### ViewsPerDay
 
 | Id | BlogPosts.Id | Date       | Views |
 |----|--------------|------------|-------|
