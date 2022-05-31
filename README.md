@@ -131,7 +131,7 @@ Write the SQL queries required **using your new schema** to support these featur
 
 ### ViewsPerDay
 
-| Id | BlogPosts.Id | Date       | Views |
+| Id | BlogPosts.Id | DateTime   | Views |
 |----|--------------|------------|-------|
 | 1  | 1            | 2022-04-29 | 89    |
 | 2  | 1            | 2022-04-30 | 123   |
