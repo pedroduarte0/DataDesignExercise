@@ -67,18 +67,18 @@ Fork this repository and add your tables here:
 | 3            | 1             |
 | 3            | 3             |
 
-### SlugTags
+## BlogPostsTags
 
-| Slug                          | Tags.Id |
-|-------------------------------|---------|
-| serilog-structured-logging    | 1       |
-| serilog-structured-logging    | 2       |
-| serilog-structured-logging    | 3       |
-| persisting-smart-enum         | 4       |
-| persisting-smart-enum         | 5       |
-| localization-aspnet-core-apis | 6       |
-| localization-aspnet-core-apis | 7       |
-| localization-aspnet-core-apis | 8       |
+| BlogPosts.Id | Tags.Id |
+|--------------|---------|
+| 1            | 1       |
+| 1            | 2       |
+| 1            | 3       |
+| 2            | 4       |
+| 2            | 5       |
+| 3            | 6       |
+| 3            | 7       |
+| 3            | 8       |
 
 ## Extra Credit 1: More Schema Additions
 
